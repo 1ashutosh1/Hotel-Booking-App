@@ -8,7 +8,7 @@ import { IoListSharp } from "react-icons/io5";
 import { FaRegBuilding } from "react-icons/fa";
 import AccountNavigation from "../components/AccountNavigation";
 
-const AccountPage = () => {
+const ProfilePage = () => {
   const [redirect, setRedirect] = useState(null);
   const { ready, user, setUser } = useContext(UserContext);
   let { subpage } = useParams();
@@ -50,4 +50,4 @@ const AccountPage = () => {
   );
 };
 
-export default AccountPage;
+export default ProfilePage;
