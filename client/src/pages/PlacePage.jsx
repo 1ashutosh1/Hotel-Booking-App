@@ -1,9 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { TbGridDots } from "react-icons/tb";
-import { IoMdClose } from "react-icons/io";
-import { FiMapPin } from "react-icons/fi";
 import BookingWidget from '../components/BookingWidget';
 import PlaceGallery from '../components/PlaceGallery';
 import AddressLink from '../components/AddressLink';

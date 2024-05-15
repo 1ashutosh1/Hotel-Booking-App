@@ -15,7 +15,7 @@ const Navbar = () => {
         <span className="font-bold text-xl  hidden sm:inline">PrimeStay</span>
       </Link>
 
-      <div className="flex gap-2 border border-gray-300 rounded-full py-2 px-4 shadow-md shadow-gray-300">
+      {/* <div className="flex gap-2 border border-gray-300 rounded-full py-2 px-4 shadow-md shadow-gray-300">
         <div>Anywhere</div>
         <div className="border-l border-gray-300"></div>
         <div>Any week</div>
@@ -24,7 +24,7 @@ const Navbar = () => {
         <button className="bg-primary text-white p-1 rounded-full">
           <FiSearch />
         </button>
-      </div>
+      </div> */}
       <Link
         to={user?"/account":"/login"}
         className="flex gap-2 border border-gray-300 rounded-full py-2 px-4 items-center"
