@@ -15,7 +15,8 @@ const Booking = require("./models/Booking");
 const { rejects } = require("assert");
 
 const bcryptSalt = bcrypt.genSaltSync();
-const jwtSecret = "draderiscool";
+const jwtSecret = process.env.SECRET;
+const frontendURL = process.env.FRONTEND_URL;
 
 app.use(express.json());
 app.use(cookieParser());
@@ -23,7 +24,7 @@ app.use("/uploads", express.static(__dirname + "/uploads"));
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:5173",
+    origin: frontendURL,
   })
 );
 
@@ -237,4 +238,4 @@ app.get("/bookings", async (req,res) => {
   res.json(await Booking.find({user: userData.id }).populate('place')); 
 });
 
-app.listen(4000);
+app.listen(process.env.PORT);
