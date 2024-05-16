@@ -3,9 +3,6 @@ import { UserContext } from "../UserContext";
 import { Link, Navigate, useParams } from "react-router-dom";
 import axios from "axios";
 import PlacesPage from "./PlacesPage";
-import { FaRegUser } from "react-icons/fa6";
-import { IoListSharp } from "react-icons/io5";
-import { FaRegBuilding } from "react-icons/fa";
 import AccountNavigation from "../components/AccountNavigation";
 
 const ProfilePage = () => {

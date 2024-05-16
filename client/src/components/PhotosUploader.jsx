@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { IoCloudUploadOutline,IoTrash  } from "react-icons/io5";
 import { FaRegStar,FaStar  } from "react-icons/fa";
 import axios from 'axios';
 
 const PhotosUploader = ({addedPhotos,setAddedPhotos}) => {
   const [photoLink, setPhotoLink] = useState("");
-
+  const backendURL = import.meta.env.VITE_BACKEND_URL;
   async function addPhotoByLink(ev) {
     ev.preventDefault();
     const { data: filename } = await axios.post("/upload-by-link", {
@@ -70,7 +70,7 @@ const PhotosUploader = ({addedPhotos,setAddedPhotos}) => {
             <div className="h-32 flex relative" key={link}>
               <img
                 className="rounded-2xl w-full object-cover position"
-                src={"http://localhost:4000/uploads/" + link}
+                src={`${backendURL}/uploads/` + link}
                 alt=""
               />
               <button onClick={(ev) => removePhoto(ev,link)} className="cursor-pointer absolute bottom-1 right-1 text-white bg-black bg-opacity-50 rounded-2xl py-2 px-3">

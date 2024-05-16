@@ -101,7 +101,7 @@ const PlacesFormPage = () => {
           onChange={(ev) => setAddress(ev.target.value)}
           placeholder="address"
         />
-        {preInput("Photos", "more = better")}
+        {preInput("Photos", "About 5 photos will be good")}
         <PhotosUploader
           addedPhotos={addedPhotos}
           setAddedPhotos={setAddedPhotos}

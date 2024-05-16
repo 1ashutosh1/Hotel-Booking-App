@@ -1,6 +1,7 @@
 import React from 'react'
 
 const PlaceImg = ({place,index=0,className=null}) => {
+  const backendURL = import.meta.env.VITE_BACKEND_URL;
   if(!place.photos?.length){
     return '';
   }
@@ -9,7 +10,7 @@ const PlaceImg = ({place,index=0,className=null}) => {
   }
 
   return (
-    <img className={className} src={'http://localhost:4000/uploads/' + place.photos[index]} alt="" />
+    <img className={className} src={`${backendURL}/uploads/` + place.photos[index]} alt="" />
   )
 }
 
