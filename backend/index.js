@@ -29,6 +29,13 @@ app.use(
   })
 );
 
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", frontendURL);
+  res.setHeader("Access-Control-Allow-Methods", "POST, GET,DELETE, PUT, UPDATE");
+  res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  next();
+});
+
 mongoose.connect(process.env.MONGO_URL);
 
 function getUserDataFromRequest(req){
