@@ -140,7 +140,7 @@ Contributions are welcome! Please follow these steps:
 For any questions or suggestions, please contact:
 
 - **Ashutosh Tripathi**
-- **Email**: your.email@example.com
+- **Email**: 1ashutoshtripathi1@gmail.com
 - **GitHub**: [1ashutosh1](https://github.com/1ashutosh1)
 
 ```
