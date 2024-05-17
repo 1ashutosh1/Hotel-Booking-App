@@ -37,7 +37,7 @@ primeStay is a hotel booking website built with the MERN stack (MongoDB, Express
 - **Other**:
   - JWT (JSON Web Tokens) for authentication
   - Multer (for file uploads)
-  - Google Maps API for location services
+  - Google Maps for location services
 
 ## ⚙️ Setup and Installation
 
@@ -54,7 +54,7 @@ To get a local copy up and running, follow these simple steps:
 
    ```bash
    git clone https://github.com/1ashutosh1/Hotel-Booking-App
-   cd primeStay
+   cd Hotel-Booking-App
    ```
 
 2. **Install Backend Dependencies**:
@@ -86,8 +86,10 @@ FRONTEND_URL="http://localhost:5173"
 
 3. Run the backend server:
 
- cd backend
- npm run dev
+   ```bash
+   cd backend
+   npm run dev
+   ```
 
 ## Client Setup
 
@@ -97,10 +99,12 @@ FRONTEND_URL="http://localhost:5173"
 ```env
 VITE_BACKEND_URL="http://localhost:yourPort(ex: 4000)"
 ```
-3. Run the backend server:
+3. Run the client server:
 
- cd client
- npm run dev
+   ```bash
+   cd client
+   npm run dev
+   ```
 
 
 # 🚀 Usage
