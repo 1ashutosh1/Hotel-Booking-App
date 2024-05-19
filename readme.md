@@ -1,6 +1,6 @@
-# 🌟 primeStay
+# 🌟 PrimeStay
 
-primeStay is a hotel booking website built with the MERN stack (MongoDB, Express.js, React, Node.js). Users can browse and book hotels, view prices based on selected dates, and explore hotel details including images, location, amenities, and features. Additionally, users can list their own places on the platform.
+PrimeStay is a hotel booking website built with the MERN stack (MongoDB, Express.js, React, Node.js). Users can browse and book hotels, view prices based on selected dates, and explore hotel details including images, location, amenities, and features. Additionally, users can list their own places on the platform.
 
 ## 📋 Table of Contents
 
