@@ -17,7 +17,7 @@ const BookingWidget = ({ place }) => {
   if(user){
     setName(user.name);
   }
- },[user])
+ },[user]);
 
   let numberOfNights = 0;
   if(checkIn && checkOut){
@@ -28,6 +28,10 @@ const BookingWidget = ({ place }) => {
     if(!user){
        navigate('/login');
        return;
+    }
+    if(!name || !phone || !checkIn || !checkOut){
+      alert("Please Enter all the details required for Booking");
+      return;
     }
     const response = await axios.post('/bookings',{
       checkIn,checkOut,numberOfGuests,name,phone,

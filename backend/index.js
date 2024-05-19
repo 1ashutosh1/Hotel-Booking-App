@@ -236,7 +236,7 @@ app.post("/bookings", async (req, res) => {
   }).then((doc) => {
     res.json(doc);
   }).catch((error) => {
-    throw err;
+    throw error;
   });
 });
 
